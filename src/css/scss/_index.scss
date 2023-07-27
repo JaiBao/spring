@@ -1,0 +1,385 @@
+.char {
+
+  display: inline-block;
+}
+
+.pic{
+  margin: 0;
+  position: relative;
+  // height: 100vh;
+  width: 100%;
+
+  img{
+    object-fit: contain;
+height: 100%;
+width: 100%;
+display: block;
+  }
+  .custom-caption{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    // left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-shadow: 5px 5px 5px rgb(85 79 79 / 75%);
+    h5{
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      margin: 0;
+      @media (min-width:768px){
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+      }
+
+      @media (min-width:1024px){
+        font-size: 2.2rem;
+        line-height: 3rem;
+      }
+    }
+  }
+
+  .mo{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    img{
+      width:10%;
+    }
+  }
+
+}
+.pic2 {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  // height: 800px;
+  width: 100%;
+  @media (min-width:1024px){
+    height: 100vh;
+  }
+  img{
+    object-fit: contain;
+height: 100%;
+width: 100%;
+display: block;
+  }
+
+  .parallax {
+    background-image: url('../assets/index/0-pic-2.jpg');
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}
+
+.servicesCard {
+  width:100%;
+  background: rgb(241,241,241,0.8);
+  margin-top: 0;
+  .servicesTitle{
+@media (min-width: 768px){
+    h4{
+      font-size: 2.5rem;
+    }
+    }
+  }
+  .servicesIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    p{
+      font-size: 1rem;
+    }
+    @media (min-width: 768px){
+      p{
+        font-size: 1.2rem;
+      }
+    }
+    @media (min-width:1024px){
+      flex-direction: row;
+      p{
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+.logoIcon1{
+  width: 90%;
+  padding:0 10px 35px 10px;
+  @media (min-width:1024px){
+    padding:35px 10px;
+  }
+  img{
+    width: 25%;
+  }
+  h5{
+    margin: auto;
+  }
+  p{
+    font-size: 15px;
+  }
+}
+.logoIcon{
+  width: 90%;
+  padding:35px 10px;
+  img{
+    width: 25%;
+  }
+  h5{
+    margin: auto;
+  }
+  p{
+    font-size: 15px;
+  }
+}
+
+.introduce{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 3% 10%;
+  // width: 80vh;
+  // max-width: 100%;
+  line-height: 1.5rem;
+p{
+  font-size: 0.93rem;
+  line-height: 1.5rem;
+
+}
+@media (min-width:768px){
+p{
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+}
+
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+  overflow: hidden;
+  margin: 4% auto;
+
+  @media (min-width:1024px){
+    padding-bottom: 58%;
+  }
+}
+
+.videoWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  // border: 2px solid #000; /* 將邊框添加到 videoWrapper */
+  background-color: #000;
+
+  @media (min-width:1024px){
+    position: absolute;
+    width: 100%;
+    top: 50%; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 向上和向左移動自身寬度和高度的一半 */
+  }
+}
+
+.videoWrapper video {
+  width: 100%;
+  height: 100%;
+}
+
+.contactUs{
+  width: 100%;
+  height: 500px;
+}
+.contactUsLeft{
+  width: 100%;
+  .contactUsCard{
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.message{
+  // width: 100%;
+  height: 500px;
+  background: rgb(241,241,241,0.8);
+  margin-top: 0;
+  padding: 5%;
+  .message{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.messageCard{
+  width: 80vw;
+  margin: 5vw 10vw;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  // text-align: center;
+  border: 0.5px solid #bdbdbd;
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  // 飄起來~~
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+  h4{
+    color: #b5578d;
+    margin:5vh 0 2vh 0;
+  }
+  p{
+    font-size: 0.93rem;
+    padding:0 6vw;
+    margin: 0;
+    @media(min-width: 768px){
+      font-size: 1.3rem;
+      padding: 0;
+    }
+  }
+// 表單
+  .messageForm {
+    width: 80vw;
+  margin: 3vw 10vw;
+    span{
+      color: #e60012;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    .formContent{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      width: 90%;
+      margin-left: 0;
+      @media(min-width: 1024px){
+        flex-direction: row;
+      }
+    }
+
+  .formInput{
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    flex-wrap: wrap;
+
+    .q-field{
+      width: 100%;
+      margin: 2px;
+
+    }
+    .formTitle{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 100%;
+      // align-items: center;
+      p{
+        margin:10px 0 0 0;
+        font-size: 0.93rem;
+        font-weight: 800;
+        padding: 0;
+      }
+      @media (min-width:768){
+        font-size: 1.3rem;
+      }
+
+    }
+
+  }
+  .formInput2{
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    flex-wrap: wrap;
+
+    .q-field{
+      width: 59%;
+      margin: 2px;
+      @media (min-width:1024px){
+        width: 51%;
+      }
+
+    }
+    .formTitle{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 100%;
+      // align-items: center;
+      p{
+        margin:10px 0 0 0;
+        font-size: 0.93rem;
+        font-weight: 800;
+        padding: 0;
+      }
+      @media (min-width:768){
+        font-size: 1.3rem;
+      }
+
+    }
+  }
+  .messageBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2% 0;
+    width: 100%;
+
+    .q-btn{
+      // margin: 2%;
+      width: 50%;
+      span{
+        color: #fff;
+      }
+    }
+  }
+  .formCaptcha{
+    width: 39%;
+    height: 60px;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #595757;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    @media (min-width:1024px){
+      width: 20%;
+    }
+
+  }
+}
+
+}

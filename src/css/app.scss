@@ -1,0 +1,20 @@
+// app global css in SCSS form
+@import "@/css/scss/index.scss";
+@import "@/css/scss/about.scss";
+
+.layoutTab{
+  .q-tabs__content{
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;}
+    width: 100%;
+    margin: 1%;
+    .layoutTabs{
+      // padding:0 2%;
+      margin: 0 1%;
+      @media (min-width:768px){
+        margin: 0 2%;
+      }
+    }
+  }
